@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5992299550926202184}
   m_Layer: 0
   m_Name: Double Decker
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

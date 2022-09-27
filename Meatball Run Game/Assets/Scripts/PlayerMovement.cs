@@ -5,45 +5,62 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private Transform groundCheckTransform;
-    private bool jumpKeyWasPressed;
-    private float horizontalInput;
-    private Rigidbody rigidbodyComponent;
     
-        // Start is called before the first frame update
+    public Rigidbody rb;
+    public float initialForwardForce = 500f; //only applied once at start of program
+    public float fowardForce = 500f; //consant forward force 
+    public float sidewaysForce = 500f; //sideways force 
+    public float downForce = 500f; // downward force on spacebar - opposite of jump 
+    public float verticalForce = 500f; // upward force - jump
+    public float alternatedownForce = 500f; // downward force applied to the jump button at the same time as jump
+
+   
+
     void Start()
     {
-        rigidbodyComponent = GetComponent<Rigidbody>();
+        rb.AddForce(0, 0, initialForwardForce * Time.deltaTime);
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    void FixedUpdate ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //add a forward force
+        rb.AddForce(0, 0, fowardForce * Time.deltaTime);   // adds force of 500 to Z axis
+
+        if (Input.GetKey("d") ) //RIGHT
         {
-            jumpKeyWasPressed = true;
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        if (Input.GetKey("a")) //LEFT
+        {
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+        }
+
+        if (Input.GetKey("space")) //DROP
+        {
+            rb.AddForce(0, -downForce * Time.deltaTime, 0);
+        }
+
+        if (Input.GetKey("w")) //FORWARD
+        {
+            rb.AddForce(0, verticalForce * Time.deltaTime, 0);
+        }
+
+        if (Input.GetKey("w")) //FORWARD DOWNWARD
+        {
+            rb.AddForce(0, -alternatedownForce * Time.deltaTime, 0);
+        }
+        if (rb.position.y < -10f) //checking if player falls 10ft off map
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
+
+       
     }
 
-    //FixedUpdate is called every physics update
-    private void FixedUpdate()
-    {
-    
-        if (Physics.OverlapSphere(groundCheckTransform.position, 0.1f).Length == 1)
-        {
-            return;
-        }
-
-        if (jumpKeyWasPressed)
-        {
-            rigidbodyComponent.AddForce(Vector3.up * 5, ForceMode.VelocityChange);
-            jumpKeyWasPressed = false;
-        }
-
-        rigidbodyComponent.velocity = new Vector3(horizontalInput, rigidbodyComponent.velocity.y, 4);
-    }
+   
 
  
 
