@@ -5,28 +5,37 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+
     public Rigidbody rb;
     public float initialForwardForce = 500f; //only applied once at start of program
-    public float fowardForce = 500f; //consant forward force 
+    public float forwardForce = 50f; //consant forward force 
     public float sidewaysForce = 500f; //sideways force 
     public float downForce = 500f; // downward force on spacebar - opposite of jump 
     public float verticalForce = 500f; // upward force - jump
     public float alternatedownForce = 500f; // downward force applied to the jump button at the same time as jump
 
-   
 
-    void Start()
+
+    
+
+
+    public void Start()
     {
         rb.AddForce(0, 0, initialForwardForce * Time.deltaTime);
     }
 
+   
 
 
-    void FixedUpdate ()
+    public void FixedUpdate ()
     {
         //add a forward force
-        rb.AddForce(0, 0, fowardForce * Time.deltaTime);   // adds force of 500 to Z axis
+         
+
+
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime);   // adds force of 500 to Z axis
+        
+
 
         if (Input.GetKey("d") ) //RIGHT
         {
@@ -57,12 +66,16 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
-       
     }
 
-   
+    public void SetforwardForce(float newSpeedAdjustment)
+    {
+            forwardForce += newSpeedAdjustment;
+       
+        //speed flash 
+    }
 
- 
+
 
 }
 
