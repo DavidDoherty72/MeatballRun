@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.ads": "3.7.5",
     "com.unity.collab-proxy": "1.15.18",
     "com.unity.feature.gameplay-storytelling": "1.0.0",
     "com.unity.feature.mobile": "1.0.0",

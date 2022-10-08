@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CollectingCoins : MonoBehaviour
 {
     public int coins;
-    public Text coinText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +24,5 @@ public class CollectingCoins : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        coinText.text = coins.ToString("0");
-    }
+    
 }
