@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AdManager ads;
     bool gameHasEnded = false;
 
     public float restartDelay = 1f;
@@ -13,6 +14,15 @@ public class GameManager : MonoBehaviour
     {
         completeLevelUI.SetActive(true);
     }
+    public void StartGame()
+    {
+        ads.ShowBanner();
+    }
+
+   // public void RewardedLife()
+  // {
+    //   ads.PlayRewardedAd(onRewardedAdSuccess);
+   // }
 
 
     public void EndGame ()
@@ -23,6 +33,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("GAME OVER");
             Invoke("Restart", restartDelay);
             //Restart Game
+            ads.PlayAd();
         }
     
     }
@@ -30,5 +41,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
 
 }

@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4894207408171453936, guid: 967fc76a917912d47ad52a408491098b, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Pause Menu
       objectReference: {fileID: 0}
     - target: {fileID: 4894207408171453936, guid: 967fc76a917912d47ad52a408491098b, type: 3}
       propertyPath: m_IsActive
