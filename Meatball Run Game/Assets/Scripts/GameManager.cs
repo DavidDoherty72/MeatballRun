@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("GAME OVER");
             Invoke("Restart", restartDelay);
             //Restart Game
-            //ads.PlayAd();
+            ads.PlayAd();
         }
     
     }
