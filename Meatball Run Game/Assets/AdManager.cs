@@ -48,7 +48,7 @@ public class AdManager : MonoBehaviour, IUnityAdsListener
     {
         if (Advertisement.IsReady("Banner_iOS"))
         {
-            Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
+            Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);
             Advertisement.Banner.Show("Banner_iOS");
         }
         else{

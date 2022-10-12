@@ -45,4 +45,14 @@ public class LevelList : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Store");
     }
+    public void Menu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
+    public void Credits()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Credits");
+    }
 }
