@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 5761450440196774791}
   - component: {fileID: 5761450440196774788}
   m_Layer: 0
-  m_Name: Hydrant
+  m_Name: Table
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

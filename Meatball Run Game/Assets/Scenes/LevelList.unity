@@ -462,7 +462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 1
+  m_Text: Adventure 1
 --- !u!222 &134225776
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Endless Mode
+  m_Text: Endless Adventure
 --- !u!222 &141181955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 296783482}
   - component: {fileID: 296783481}
   m_Layer: 5
-  m_Name: Mission 3
+  m_Name: Adventure 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 514380060}
   - component: {fileID: 514380059}
   m_Layer: 5
-  m_Name: Mission 5
+  m_Name: Adventure 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,7 +718,7 @@ RectTransform:
   m_Children:
   - {fileID: 613933881}
   m_Father: {fileID: 1079972405}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -890,7 +890,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 5
+  m_Text: Adventure 5
 --- !u!222 &613933883
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -970,7 +970,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Store
+  m_Text: STORE
 --- !u!222 &628588288
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1150,8 +1150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307, y: 159}
-  m_SizeDelta: {x: 109.0663, y: 86.7505}
+  m_AnchoredPosition: {x: 285.3, y: 159}
+  m_SizeDelta: {x: 152.4663, y: 86.751}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701920114
 MonoBehaviour:
@@ -1821,8 +1821,8 @@ RectTransform:
   - {fileID: 1630974363}
   - {fileID: 1219013045}
   - {fileID: 296783480}
-  - {fileID: 514380058}
   - {fileID: 2122834605}
+  - {fileID: 514380058}
   - {fileID: 1461564161}
   m_Father: {fileID: 1908488398}
   m_RootOrder: 0
@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 1219013047}
   - component: {fileID: 1219013046}
   m_Layer: 5
-  m_Name: Mission 2
+  m_Name: Adventure 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2255,7 +2255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 3
+  m_Text: Adventure 3
 --- !u!222 &1229504097
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2415,7 +2415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 4
+  m_Text: Adventure 4
 --- !u!222 &1308105346
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2571,7 +2571,7 @@ GameObject:
   - component: {fileID: 1461564163}
   - component: {fileID: 1461564162}
   m_Layer: 5
-  m_Name: Endless
+  m_Name: Endless Adventure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2595,8 +2595,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184, y: -9.75}
-  m_SizeDelta: {x: 200, y: 52.5}
+  m_AnchoredPosition: {x: -184, y: -23.9985}
+  m_SizeDelta: {x: 200, y: 80.9971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461564162
 MonoBehaviour:
@@ -2829,7 +2829,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: CREDITS
 --- !u!222 &1580980449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2909,7 +2909,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: TITLE
 --- !u!222 &1615775479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2931,7 +2931,7 @@ GameObject:
   - component: {fileID: 1630974365}
   - component: {fileID: 1630974364}
   m_Layer: 5
-  m_Name: Mission 1
+  m_Name: Adventure 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3347,7 +3347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 2
+  m_Text: Adventure 2
 --- !u!222 &1921502102
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3542,6 +3542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b680327e42abf6743b8a706593684795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
+  totalUI: {fileID: 0}
 --- !u!114 &1954756189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,7 +3595,7 @@ GameObject:
   - component: {fileID: 2122834607}
   - component: {fileID: 2122834606}
   m_Layer: 5
-  m_Name: Mission 4
+  m_Name: Adventure 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3613,7 +3615,7 @@ RectTransform:
   m_Children:
   - {fileID: 1308105344}
   m_Father: {fileID: 1079972405}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

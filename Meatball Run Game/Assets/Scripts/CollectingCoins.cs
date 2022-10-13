@@ -22,7 +22,9 @@ public class CollectingCoins : MonoBehaviour
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
+
     }
+
     public void Update()
     {
         coinText.text = coins.ToString("0");
