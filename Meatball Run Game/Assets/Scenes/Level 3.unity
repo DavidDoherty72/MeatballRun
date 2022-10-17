@@ -2073,6 +2073,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 1387657151035146183, guid: 47586171114ee944e95719b53650c235, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd37a20797c9d744a92f1350b3fce715, type: 2}
     - target: {fileID: 2167169284405097214, guid: 47586171114ee944e95719b53650c235, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -2557,7 +2561,7 @@ Transform:
   - {fileID: 1649735367}
   - {fileID: 1940229146}
   m_Father: {fileID: 556055761}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &476726997
 PrefabInstance:
@@ -3116,9 +3120,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 474292050}
   - {fileID: 350395248}
   - {fileID: 7234299415081388164}
-  - {fileID: 474292050}
   - {fileID: 527987804}
   m_Father: {fileID: 0}
   m_RootOrder: 3
