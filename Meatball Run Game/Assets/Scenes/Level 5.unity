@@ -483,6 +483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 1420649960621080063, guid: 5f308cc922d5d754db63fb79b494d06c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c6116df839babeb4487a9f4d6cb25798, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f308cc922d5d754db63fb79b494d06c, type: 3}
 --- !u!4 &350395248 stripped
@@ -3342,6 +3346,22 @@ PrefabInstance:
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.081
+      objectReference: {fileID: 0}
+    - target: {fileID: 638977524983205484, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 638977524983205484, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.028301895
+      objectReference: {fileID: 0}
+    - target: {fileID: 638977524983205484, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.011044638
+      objectReference: {fileID: 0}
+    - target: {fileID: 638977524983205484, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205486, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_Name
