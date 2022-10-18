@@ -8,10 +8,10 @@ public class Credits : MonoBehaviour
     {
         Application.Quit();
     }
-    public void LevelList()
+    public void Menu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("LevelList");
+        SceneManager.LoadScene("Menu");
     }
     public void Endless()
     {

@@ -529,7 +529,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2066473627}
         m_TargetAssemblyTypeName: Credits, Assembly-CSharp
-        m_MethodName: LevelList
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
