@@ -3458,7 +3458,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1908488399}
         m_TargetAssemblyTypeName: LevelList, Assembly-CSharp
-        m_MethodName: Store
+        m_MethodName: Level1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5054,7 +5054,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1908488399}
         m_TargetAssemblyTypeName: LevelList, Assembly-CSharp
-        m_MethodName: Store
+        m_MethodName: Level1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
