@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 212199696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529463786}
+        m_TargetAssemblyTypeName: LevelWindow, Assembly-CSharp
+        m_MethodName: Add5XP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &212199696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelWindow: {fileID: 529463786}
+  player: {fileID: 737797800}
 --- !u!4 &411205476
 Transform:
   m_ObjectHideFlags: 0
@@ -778,6 +791,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8201388645080041447, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
   m_PrefabInstance: {fileID: 378108307}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &737797790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8201388645080041452, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+  m_PrefabInstance: {fileID: 378108307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &737797800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737797790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc873492ee0f894ba36800fe2768d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041358705
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +820,7 @@ GameObject:
   - component: {fileID: 1041358708}
   - component: {fileID: 1041358707}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: experience500Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -941,7 +971,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1092643467}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529463786}
+        m_TargetAssemblyTypeName: LevelWindow, Assembly-CSharp
+        m_MethodName: Add500XP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1092643467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,7 +1343,7 @@ GameObject:
   - component: {fileID: 1309912688}
   - component: {fileID: 1309912687}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: experience5Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1457,7 +1499,7 @@ GameObject:
   - component: {fileID: 1472234878}
   - component: {fileID: 1472234877}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: experience50Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1754,7 +1796,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2118720645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529463786}
+        m_TargetAssemblyTypeName: LevelWindow, Assembly-CSharp
+        m_MethodName: Add50XP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2118720645
 MonoBehaviour:
   m_ObjectHideFlags: 0

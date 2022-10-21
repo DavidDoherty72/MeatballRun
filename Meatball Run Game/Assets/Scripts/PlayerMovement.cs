@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0, -alternatedownForce * Time.deltaTime, 0);
         }
-        if (rb.position.y < -10f) //checking if player falls 10ft off map
+        if (rb.position.y < -50f) //checking if player falls 10ft off map
         {
             FindObjectOfType<GameManager>().EndGame();
         }

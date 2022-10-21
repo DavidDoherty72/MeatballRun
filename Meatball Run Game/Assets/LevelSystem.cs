@@ -22,7 +22,7 @@ public class LevelSystem
     public void AddExperience(int amount)
     {
         experience += amount;
-        if(experience >= experienceToNextLevel)
+        while(experience >= experienceToNextLevel)
         {
             // enough expereince to level up
             level++;
@@ -42,5 +42,15 @@ public class LevelSystem
     public float GetExperienceNormalized()
     {
         return (float)experience / experienceToNextLevel;
+    }
+
+    public int GetExperience()
+    {
+        return experience;
+    }
+
+    public int GetExperienceToNextLevel()
+    {
+        return experienceToNextLevel;
     }
 }
