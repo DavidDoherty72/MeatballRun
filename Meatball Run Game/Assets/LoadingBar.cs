@@ -12,7 +12,7 @@ public class LoadingBar : MonoBehaviour
 
    private void Awake()
     {
-        
+       // barImage.fillAmount = .03f;
 
     }
 }
