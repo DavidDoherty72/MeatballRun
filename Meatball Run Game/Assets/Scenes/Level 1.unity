@@ -3068,6 +3068,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  coins2: 0
+  coins5: 0
+  coins10: 0
   coinText: {fileID: 314459010}
 --- !u!1001 &314825905
 PrefabInstance:
@@ -12405,7 +12408,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286877783}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 400b2cd0278ddd14ea48e8b42eddb2e4, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: d2ca874d54cdf154ca1d54e49e32cfe5, type: 2}
   m_EnableTreeColliders: 1
@@ -19792,8 +19795,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4894207408635494434, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207408635494434, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207408635494434, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207408635494434, guid: 967fc76a917912d47ad52a408491098b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207408635494434, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207409452595284, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4894207408171453941, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+    - target: {fileID: 4894207409452595284, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894207409452595284, guid: 967fc76a917912d47ad52a408491098b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4894207410195858111, guid: 967fc76a917912d47ad52a408491098b, type: 3}
       propertyPath: m_IsActive
@@ -21872,6 +21903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1064543400015151328, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 98c8e0a0677131c41ade807a790776ab, type: 3}
     - target: {fileID: 2404809839992256851, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -22103,8 +22138,16 @@ PrefabInstance:
       value: Pause
       objectReference: {fileID: 0}
     - target: {fileID: 7109963050525405348, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109963050525405348, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
+      value: PauseMenu1, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109963050525405348, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7109963050525405349, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
       propertyPath: m_Pivot.x
@@ -22189,6 +22232,10 @@ PrefabInstance:
     - target: {fileID: 7109963050525405349, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109963050525405351, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7109963050525405351, guid: 2d92a4850754ea34ab8943a2f84f982d, type: 3}
       propertyPath: m_Color.b
@@ -22371,6 +22418,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 466556518}
     m_Modifications:
+    - target: {fileID: -2110368820699968178, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2110368820699968178, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a5e58848eb38e6d4eb7371fc68d45a04, type: 3}
     - target: {fileID: -213112126783187426, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -22438,6 +22493,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -213112126783187426, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
     - {fileID: 6596050763787547758, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+    - {fileID: -2110368820699968178, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
 --- !u!1 &8201388646112635068 stripped
 GameObject:
@@ -22457,6 +22513,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  coins2: 0
+  coins5: 0
+  coins10: 0
   coinText: {fileID: 314459010}
 --- !u!114 &8201388646112635077
 MonoBehaviour:

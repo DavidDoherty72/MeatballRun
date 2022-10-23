@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 
 
+
 public class LoadingBar : MonoBehaviour
 {
     private Image barImage;
@@ -12,6 +13,7 @@ public class LoadingBar : MonoBehaviour
 
    private void Awake()
     {
+       // barImage = transform.Find("bar").GetComponent<barImage>();
        // barImage.fillAmount = .03f;
 
     }

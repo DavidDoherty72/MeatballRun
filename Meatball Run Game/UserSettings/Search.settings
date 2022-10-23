@@ -10,7 +10,7 @@ scopes = {
 	"last_search.EAB0C2BA" = "restaurant"
 	"OpenInspectorPreview.EAB0C2BA" = "0"
 	"currentGroup.EAB0C2BA" = "all"
-	"last_search.DA949528" = "open gr"
+	"last_search.DA949528" = "Timeline"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }
@@ -59,6 +59,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"T"
 	"re"
 ]
 searchItemFavorites = [

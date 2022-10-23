@@ -19,6 +19,8 @@ public class FollowPlayer : MonoBehaviour
         {
             transform.Rotate(0, 180, 0);
         }
+
+        
     }
 }
       

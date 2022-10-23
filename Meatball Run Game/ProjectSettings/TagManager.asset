@@ -10,6 +10,8 @@ TagManager:
   - 2XCOINS
   - 5XCOINS
   - 10XCOINS
+  - Fire
+  - XP
   layers:
   - Default
   - TransparentFX
