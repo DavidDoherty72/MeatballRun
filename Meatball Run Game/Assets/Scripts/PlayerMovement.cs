@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody rb;
     public float initialForwardForce = 500f; //only applied once at start of program
-    public float forwardForce = 50f; //consant forward force 
+    public float forwardForce = 500f; //consant forward force 
     public float sidewaysForce = 500f; //sideways force 
     public float downForce = 500f; // downward force on spacebar - opposite of jump 
     public float verticalForce = 500f; // upward force - jump
@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     
 
-
-    public void Start()
+    
+    public void Start() //Initial Forward Force
     {
         rb.AddForce(0, 0, initialForwardForce * Time.deltaTime);
     }
@@ -37,12 +37,12 @@ public class PlayerMovement : MonoBehaviour
         
 
 
-        if (Input.GetKey("d") ) //RIGHT
+        if (Input.GetKey("d") ) //SIDEWAYS RIGHT
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("a")) //LEFT
+        if (Input.GetKey("a")) //SIDEWAYS LEFT
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }

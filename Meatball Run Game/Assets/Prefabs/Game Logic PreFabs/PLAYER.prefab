@@ -133,12 +133,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8201388645080041443}
-  initialForwardForce: 500
-  forwardForce: 50
-  sidewaysForce: 2500
-  downForce: 2000
-  verticalForce: 750
-  alternatedownForce: 300
+  initialForwardForce: 0
+  forwardForce: 400
+  sidewaysForce: 3000
+  downForce: 1000
+  verticalForce: 0
+  alternatedownForce: 0
 --- !u!114 &8201388645080041445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,6 +261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  coins2: 0
+  coins5: 0
+  coins10: 0
   coinText: {fileID: 754113404810867749, guid: 3f0d758cd6501774dbe17ea268d3e4ee, type: 3}
 --- !u!114 &6596050763787547758
 MonoBehaviour:
