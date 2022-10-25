@@ -59,9 +59,9 @@ public class CollectingCoins : MonoBehaviour
     public void Update()
     {
         coinText.text = coins.ToString("0");
-        coinText.text = coins2.ToString("0");
-        coinText.text = coins5.ToString("0");
-        coinText.text = coins10.ToString("0");
+        //coinText.text = coins2.ToString("0");
+       // coinText.text = coins5.ToString("0");
+       // coinText.text = coins10.ToString("0");
 
     }
 
