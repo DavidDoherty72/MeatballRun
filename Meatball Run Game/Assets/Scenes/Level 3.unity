@@ -1749,6 +1749,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  coins2: 0
+  coins5: 0
+  coins10: 0
   coinText: {fileID: 314459010}
 --- !u!1001 &320018817
 PrefabInstance:
@@ -4410,7 +4413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -13263,4 +13266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  coins2: 0
+  coins5: 0
+  coins10: 0
   coinText: {fileID: 314459010}

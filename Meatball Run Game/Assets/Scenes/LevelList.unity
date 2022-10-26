@@ -3657,7 +3657,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Total Coins
+  m_Text: Player Total Coins
 --- !u!222 &1108841710
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5980,7 +5980,7 @@ GameObject:
   - component: {fileID: 1954756189}
   - component: {fileID: 1954756188}
   m_Layer: 5
-  m_Name: Coins
+  m_Name: Player Total Coins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6004,7 +6004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000031114, y: -148.19}
+  m_AnchoredPosition: {x: -0.000031114, y: -128.65}
   m_SizeDelta: {x: 100, y: 35.481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1954756188
@@ -6020,7 +6020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
-  totalUI: {fileID: 0}
+  totalUI: {fileID: 1108841709}
 --- !u!114 &1954756189
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ public class CollectingCoins : MonoBehaviour
         if (Col.gameObject.tag == "5XCOINS")
         {
             coins = coins + 5;
-            //Debug.Log("Collected +2 COINS");
+            //Debug.Log("Collected +5 COINS");
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -46,7 +46,7 @@ public class CollectingCoins : MonoBehaviour
         if (Col.gameObject.tag == "10XCOINS")
         {
             coins = coins + 10;
-            //Debug.Log("Collected +2 COINS");
+            //Debug.Log("Collected +10 COINS");
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -58,10 +58,7 @@ public class CollectingCoins : MonoBehaviour
 
     public void Update()
     {
-        coinText.text = coins.ToString("0");
-        //coinText.text = coins2.ToString("0");
-       // coinText.text = coins5.ToString("0");
-       // coinText.text = coins10.ToString("0");
+        coinText.text = coins.ToString("0");   
 
     }
 

@@ -8,6 +8,7 @@ public class StoreMoney : MonoBehaviour
 {
     public int coins;
     public Text totalUI;
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {

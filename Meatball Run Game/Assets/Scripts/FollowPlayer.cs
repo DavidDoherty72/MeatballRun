@@ -20,7 +20,13 @@ public class FollowPlayer : MonoBehaviour
             transform.Rotate(0, 180, 0);
         }
 
-        
+        if (Input.GetKey("j"))
+        {
+            transform.position = player.position + offset;
+            transform.Rotate(0, 90, 0);
+        }
+
+
     }
 }
       
