@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public CollectingCoins collectingCoins;
-   
+    public int level;
+    
 
-
-    public void SaveCoins()
+    public void levelup()
     {
+        
 
     }
+
+
+
 
 
 }
