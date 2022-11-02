@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public GameObject MygameObject;
     public ExperienceCoins XP;
     public Text experienceText;
+    public Text experienceText2;
 
 
     void Update()
@@ -42,7 +43,8 @@ public class Player : MonoBehaviour
 
 
         Debug.Log ("Level : " + progressionComponent.Level + " | Experience : " + progressionComponent.Experience);
-        experienceText.text = ("Level : " + progressionComponent.Level + " | Experience : " + progressionComponent.Experience);
+        experienceText.text = ("Level : " + progressionComponent.Level);
+        experienceText2.text = ("Experience : " + progressionComponent.Experience + "/Amount For Next Level");
     }
 
    
