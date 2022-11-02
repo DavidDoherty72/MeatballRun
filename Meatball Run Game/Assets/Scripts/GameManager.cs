@@ -5,18 +5,27 @@ public class GameManager : MonoBehaviour
 {
     public AdManager ads;
     bool gameHasEnded = false;
+    bool gameHasStarted = true;
+
 
     public float restartDelay = 1f;
+    public float startGameDelay = 1f;
+
+
 
     public GameObject completeLevelUI;
-
     public void CompleteLevel ()
     {
-        completeLevelUI.SetActive(true);
+    completeLevelUI.SetActive(true);
     }
+   
+    
+    
+    
     public void StartGame()
     {
         ads.ShowBanner();
+        
     }
 
    // public void RewardedLife()
@@ -42,6 +51,15 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+   public void StartPause ()
+   {
+        if (gameHasStarted == false)
+        {
+            gameHasStarted = true;
+            Debug.Log("Game is Waiting");
+            Invoke("StartGame", restartDelay);
+        }
+   }
 
 
 }

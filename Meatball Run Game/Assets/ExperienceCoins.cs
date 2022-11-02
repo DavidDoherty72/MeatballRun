@@ -6,20 +6,22 @@ using UnityEngine.UI;
 public class ExperienceCoins : MonoBehaviour
 {
     public int xP;
-    public Text experienceText;
+   // public Text experienceText;
 
     public void OnTriggerEnter(Collider Col)
     {
         if (Col.gameObject.tag == "XP")
         {
             xP = xP + 25;
-            //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
+            //Col.gameObject.SetActive(false);
         }
 
-        void Update()
-        {
-            experienceText.text = xP.ToString("0");
-        }
+        // void Update()
+        //  {
+        //     experienceText.text = xP.ToString("0");
+        // }
     }
+
+    
 }
