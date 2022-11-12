@@ -73,7 +73,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: db0edd8b525208d4ca4a7e77d17ffa99, type: 2}
+  - {fileID: 2100000, guid: 7053a7f4a1b54a248bb474ed5c3a9182, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -315,7 +315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MygameObject: {fileID: 8201388645080041452}
-  XP: {fileID: -1125697804599762812}
   experienceText: {fileID: 621985830656695501, guid: 0a524f3eb7a094b4cab3ef317117c350, type: 3}
   experienceText2: {fileID: 8599662521776551829, guid: c4eca498e8ad735438796d032fb887b4, type: 3}
 --- !u!114 &4731813379591514866

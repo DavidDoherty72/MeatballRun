@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
   //  public ExperienceCoins XP;
     public Text experienceText;
     public Text experienceText2;
+  
 
 
    
@@ -39,5 +40,5 @@ public class Player : MonoBehaviour
         experienceText2.text = ("Experience : " + progressionComponent.Experience + "/Amount For Next Level");
     }
 
-   
+    
 }
