@@ -6,7 +6,7 @@ using UnityEngine.Purchasing;
 public class IAPShop : MonoBehaviour
 {
     private string metalSkin = "com.daveDoherty.meatballAdventure.skinChange";
-    private GameObject restorePurchaseBtn;
+    public GameObject restorePurchaseBtn;
 
     private void Awake()
     {
