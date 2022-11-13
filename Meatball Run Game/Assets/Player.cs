@@ -8,6 +8,7 @@ using System;
 
 public class Player : MonoBehaviour
 {
+    public Image playerCurrentSkin;
     public GameObject MygameObject;
   //  public ExperienceCoins XP;
     public Text experienceText;
