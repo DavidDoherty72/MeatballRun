@@ -73,7 +73,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7053a7f4a1b54a248bb474ed5c3a9182, type: 2}
+  - {fileID: 2100000, guid: a3384ef3e2313034f9016ad8a1f3999f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8201388645080041443}
   initialForwardForce: 0
-  forwardForce: 400
-  sidewaysForce: 3000
+  forwardForce: 500
+  sidewaysForce: 2000
   downForce: 1000
   verticalForce: 0
   alternatedownForce: 0
@@ -166,7 +166,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0820f59da89659a43b5ba99c76f82bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCurrentSkin: {fileID: 0}
   MygameObject: {fileID: 8201388645080041452}
   experienceText: {fileID: 621985830656695501, guid: 0a524f3eb7a094b4cab3ef317117c350, type: 3}
   experienceText2: {fileID: 8599662521776551829, guid: c4eca498e8ad735438796d032fb887b4, type: 3}
@@ -429,11 +430,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7710086954383210093, guid: acdb90624a404aa438447006f1026065, type: 3}
       propertyPath: m_Intensity
-      value: 2.8265224
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8986935675043883179, guid: acdb90624a404aa438447006f1026065, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9186446616439801708, guid: acdb90624a404aa438447006f1026065, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acdb90624a404aa438447006f1026065, type: 3}

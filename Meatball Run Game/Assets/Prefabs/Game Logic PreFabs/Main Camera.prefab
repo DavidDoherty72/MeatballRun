@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8201388645080041447, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
-  offset: {x: 0, y: 3, z: -4.5}
+  offset: {x: 3, y: 2, z: -4.5}
 --- !u!1 &4640092995171179334
 GameObject:
   m_ObjectHideFlags: 0
