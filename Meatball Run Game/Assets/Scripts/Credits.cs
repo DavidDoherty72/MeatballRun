@@ -18,5 +18,11 @@ public class Credits : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Endless");
     }
+
+    public void Levellist()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("LevelList");
+    }
 }
 

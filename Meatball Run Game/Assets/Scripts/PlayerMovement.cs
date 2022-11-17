@@ -66,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
+     
+
     }
 
     public void SetforwardForce(float newSpeedAdjustment)

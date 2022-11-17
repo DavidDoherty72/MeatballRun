@@ -1850,7 +1850,7 @@ GameObject:
   - component: {fileID: 769045889}
   - component: {fileID: 769045888}
   m_Layer: 5
-  m_Name: Main Menu
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3227,7 +3227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1188672658
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4195,7 +4195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Title Screen
 --- !u!222 &1612581953
 CanvasRenderer:
   m_ObjectHideFlags: 0
