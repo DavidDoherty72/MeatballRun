@@ -5,63 +5,80 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    
+    //Movement
     public Rigidbody rb;
-    public float initialForwardForce = 500f; //only applied once at start of program
     public float forwardForce = 500f; //consant forward force 
     public float sidewaysForce = 500f; //sideways force 
-    public float downForce = 500f; // downward force on spacebar - opposite of jump 
-    public float verticalForce = 500f; // upward force - jump
-    public float alternatedownForce = 500f; // downward force applied to the jump button at the same time as jump
+    //public float MAX_SPEED = 2000f;
 
+    //Jumping
+    private float jumpSpeed = 5;
+    private bool onGround = false;
+    private int MAX_JUMP = 2;
+    private int currentJump = 0; 
 
+    //Shooting
 
     
+        
 
     
-    public void Start() //Initial Forward Force
+    public void Start() 
     {
-        rb.AddForce(0, 0, initialForwardForce * Time.deltaTime);
+       rb = GetComponent<Rigidbody>();
     }
 
-   
 
+    
+       
+
+    void OnCollisionEnter(Collision collision)
+    {
+        onGround = true;
+        currentJump = 0;
+    }
 
     public void FixedUpdate ()
     {
-        //add a forward force
-         
-
-
-        rb.AddForce(0, 0, forwardForce * Time.deltaTime);   // adds force of 500 to Z axis
+        //add a Constant forward force   // adds force of 500 to Z axis
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime);   
         
 
 
-        if (Input.GetKey("d") ) //SIDEWAYS RIGHT
+        if (Input.GetKey("d") ) //RIGHT
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("a")) //SIDEWAYS LEFT
+        if (Input.GetKey("a")) //LEFT
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("space")) //DROP
+        if (Input.GetKey("s")) //BACKWARDS
         {
-            rb.AddForce(0, -downForce * Time.deltaTime, 0);
+            rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
         }
 
-        if (Input.GetKey("w")) //FORWARD
+
+        
+
+
+        if (Input.GetKeyDown("space") && (onGround || MAX_JUMP > currentJump))
         {
-            rb.AddForce(0, verticalForce * Time.deltaTime, 0);
+            rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            //player.GetComponent<Animator>().Play("Jump");
+            onGround = false;
+            currentJump++;
+            
         }
 
-        if (Input.GetKey("w")) //FORWARD DOWNWARD
-        {
-            rb.AddForce(0, -alternatedownForce * Time.deltaTime, 0);
-        }
-        if (rb.position.y < -50f) //checking if player falls 10ft off map
+
+
+
+        //checking if player falls 30ft off map
+        if (rb.position.y < -30f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
@@ -70,6 +87,10 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+
+
+    //DO NOT TOUCH, ATTACHED TO SPEEDBOOST POWER UP
     public void SetforwardForce(float newSpeedAdjustment)
     {
             forwardForce += newSpeedAdjustment;
