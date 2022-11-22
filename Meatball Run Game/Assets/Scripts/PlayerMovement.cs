@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce = 500f; //consant forward force 
     public float sidewaysForce = 500f; //sideways force 
+    public float dash = 2000f;
     //public float MAX_SPEED = 2000f;
 
     //Jumping
@@ -58,11 +59,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("s")) //BACKWARDS
         {
-            rb.AddForce(0, 0, -forwardForce * Time.deltaTime);
+            rb.AddForce(0, 0, -forwardForce * 2 * Time.deltaTime);
         }
 
-
-        
+        if (Input.GetKey("j")) //Dash
+        {
+            rb.AddForce(0, 0, dash * Time.deltaTime);
+        }
 
 
         if (Input.GetKeyDown("space") && (onGround || MAX_JUMP > currentJump))
