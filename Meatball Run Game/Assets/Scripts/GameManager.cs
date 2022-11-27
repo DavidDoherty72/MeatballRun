@@ -6,21 +6,20 @@ public class GameManager : MonoBehaviour
 {
     public AdManager ads;
     bool gameHasEnded = false;
-    bool gameHasStarted = true;
-
-
     public float restartDelay = 1f;
-    public float startGameDelay = 1f;
-
-
-
     public GameObject completeLevelUI;
+    public GameObject youDiedUI;
+    
+
     public void CompleteLevel ()
     {
     completeLevelUI.SetActive(true);
     }
    
-    
+    public void youDied ()
+    {
+        youDiedUI.SetActive(true);
+    }
     
     
     public void StartGame()
@@ -41,6 +40,7 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("GAME OVER");
+            youDied();
             Invoke("Restart", restartDelay);
             //Restart Game
             ads.PlayAd();
@@ -50,17 +50,8 @@ public class GameManager : MonoBehaviour
     void Restart ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        youDiedUI.SetActive(false);
     }
-
-   public void StartPause ()
-   {
-        if (gameHasStarted == false)
-        {
-            gameHasStarted = true;
-            Debug.Log("Game is Waiting");
-            Invoke("StartGame", restartDelay);
-        }
-   }
-
+       
 
 }
