@@ -9,8 +9,7 @@ public class PlayerMovement : MonoBehaviour
     //Movement
     [SerializeField]
     private Rigidbody rb;
-    [SerializeField]
-    private float constantForce = 500f;
+    public float consistanceForce = 500f;
     [SerializeField]
     private float forwardForce = 500f; //consant forward force 
     [SerializeField]
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     public void FixedUpdate ()
     {
           
-        rb.AddForce(0, 0, constantForce * Time.deltaTime);    //add a Constant forward force 
+        rb.AddForce(0, 0, consistanceForce * Time.deltaTime);    //add a Constant forward force 
 
         if (Input.GetKey("d") ) //RIGHT
         {
@@ -52,12 +51,12 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("s")) //BACKWARDS
+        if (Input.GetKeyDown("s")) //BACKWARDS
         {
-            rb.AddForce(0, 0, -forwardForce * 2 * Time.deltaTime);
+            rb.AddForce(0, 0, -forwardForce * 4 * Time.deltaTime);
         }
 
-        if (Input.GetKey("w")) //FORWARDS
+        if (Input.GetKeyDown("w")) //FORWARDS
         {
             rb.AddForce(0, 0, forwardForce * 2 * Time.deltaTime);
         }

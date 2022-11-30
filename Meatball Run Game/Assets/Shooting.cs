@@ -6,41 +6,41 @@ public class Shooting : MonoBehaviour
 {
     //Shooting
     [SerializeField]
-    private Rigidbody rb;
+    private GameObject grenade; //GRENADE 
     [SerializeField]
-    private GameObject objectToSpawn;
+    private Rigidbody grenadeRigidbody; //MAKES THE EXPLOSION DROP 
     [SerializeField]
-    private Vector3 offset;
+    private Vector3 offset; //EXPLOSION DISTANCE FROM PLAYER
     [SerializeField]
-    private float forwardForce = 500f; //consant forward force 
+    private GameObject grenadeEffect; //PARTICLE EFFECT
+    [SerializeField]
+    private AudioClip grenadeSound; //AUDIO SOURCE
 
+   
 
     //Abilities
     public void FixedUpdate()
     {
-    
-        if (Input.GetKeyDown("k")) //SHOOT BOMB
+       
+        if (Input.GetKeyDown("k")) //SHOOT Gernade
         {
             SpawnGrenade();
-           
-        }
-
-        if (Input.GetKey("l")) //SWORD
-        {
             
         }
-
-        if (Input.GetKey("j")) //LASER
-        {
-           
-        }
-
-        void SpawnGrenade()
-        {
-            Instantiate(objectToSpawn, transform.position + offset, Quaternion.identity);
-            rb.AddForce(0, 0, forwardForce);
-        }
-
     }
 
+    void SpawnGrenade()
+    {
+        GameObject clone = Instantiate(grenade, transform.position + offset, Quaternion.identity);
+        SpawnGrenadeEffects();
+
+        Destroy(clone, 1.0f);
+    }
+
+    void SpawnGrenadeEffects()
+    {
+        Instantiate(grenadeEffect, transform.position + offset, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(grenadeSound, transform.position);
+
+    }
 }

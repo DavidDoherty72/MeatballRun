@@ -12,6 +12,8 @@ TagManager:
   - 10XCOINS
   - Fire
   - XP
+  - Ammo
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
