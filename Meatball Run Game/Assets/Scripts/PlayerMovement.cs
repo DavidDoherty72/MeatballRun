@@ -5,35 +5,32 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+
     //Movement
-    public Rigidbody rb;
-    public float forwardForce = 500f; //consant forward force 
-    public float sidewaysForce = 500f; //sideways force 
-    public float dash = 2000f;
+    [SerializeField]
+    private Rigidbody rb;
+    [SerializeField]
+    private float constantForce = 500f;
+    [SerializeField]
+    private float forwardForce = 500f; //consant forward force 
+    [SerializeField]
+    private float sidewaysForce = 500f; //sideways force 
+    [SerializeField]
+    private float dash = 500f;
     //public float MAX_SPEED = 2000f;
 
     //Jumping
     private float jumpSpeed = 5;
     private bool onGround = false;
     private int MAX_JUMP = 2;
-    private int currentJump = 0; 
-
-    //Shooting
-
-    
+    private int currentJump = 0;
+            
         
-
-    
     public void Start() 
     {
        rb = GetComponent<Rigidbody>();
-    }
-
-
-    
-       
-
+    } 
+     
     void OnCollisionEnter(Collision collision)
     {
         onGround = true;
@@ -42,10 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void FixedUpdate ()
     {
-        //add a Constant forward force   // adds force of 500 to Z axis
-        rb.AddForce(0, 0, forwardForce * Time.deltaTime);   
-        
-
+          
+        rb.AddForce(0, 0, constantForce * Time.deltaTime);    //add a Constant forward force 
 
         if (Input.GetKey("d") ) //RIGHT
         {
@@ -62,36 +57,30 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(0, 0, -forwardForce * 2 * Time.deltaTime);
         }
 
-        if (Input.GetKey("j")) //Dash
+        if (Input.GetKey("w")) //FORWARDS
         {
-            rb.AddForce(0, 0, dash * Time.deltaTime);
+            rb.AddForce(0, 0, forwardForce * 2 * Time.deltaTime);
         }
 
+        if (Input.GetKeyDown("i")) //DASH
+        {
+            rb.AddForce(0, 0, dash * 2 * Time.deltaTime);
+        }
 
-        if (Input.GetKeyDown("space") && (onGround || MAX_JUMP > currentJump))
+        if (Input.GetKeyDown("space") && (onGround || MAX_JUMP > currentJump)) //Jump & JumpCap
         {
             rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
-            //player.GetComponent<Animator>().Play("Jump");
             onGround = false;
             currentJump++;
-            
         }
-
-
-
-
+                  
         //checking if player falls 30ft off map
         if (rb.position.y < -30f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
-
-     
-
+            
     }
-
-
-
 
     //DO NOT TOUCH, ATTACHED TO SPEEDBOOST POWER UP
     public void SetforwardForce(float newSpeedAdjustment)
@@ -100,9 +89,7 @@ public class PlayerMovement : MonoBehaviour
        
         //speed flash 
     }
-
-
-
+            
 }
 
 
