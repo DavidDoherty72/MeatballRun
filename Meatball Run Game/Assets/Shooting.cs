@@ -43,4 +43,5 @@ public class Shooting : MonoBehaviour
         AudioSource.PlayClipAtPoint(grenadeSound, transform.position);
 
     }
+
 }

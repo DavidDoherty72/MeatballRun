@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKeyDown("s")) //BACKWARDS
+        if (Input.GetKey("s")) //BACKWARDS
         {
             rb.AddForce(0, 0, -forwardForce * 4 * Time.deltaTime);
         }
@@ -73,12 +73,14 @@ public class PlayerMovement : MonoBehaviour
             currentJump++;
         }
                   
-        //checking if player falls 30ft off map
-        if (rb.position.y < -30f)
+        //checking if player falls 70ft off map
+        if (rb.position.y < -70f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
-            
+
+       
+
     }
 
     //DO NOT TOUCH, ATTACHED TO SPEEDBOOST POWER UP
