@@ -166,7 +166,7 @@ Material:
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
     - _WaveOffset: {r: 1, g: 1, b: -0.01, a: -0.01}
     - _WaveScale4: {r: 0.1, g: 0.1, b: 0.01, a: 0.01}
-    - _WorldLightDir: {r: -0.030375142, g: -0.23543626, b: -0.9714152, a: 0}
+    - _WorldLightDir: {r: 0.6654158, g: -0.23543629, b: -0.7083729, a: 0}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:

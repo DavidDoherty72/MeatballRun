@@ -81982,21 +81982,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 912142468}
     m_Modifications:
+    - target: {fileID: 3920092180277274704, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Text
+      value: Down into the Sewer...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092180277274704, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092180277274734, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Name
+      value: Text
+      objectReference: {fileID: 0}
     - target: {fileID: 3920092181825964280, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.20641977
       objectReference: {fileID: 0}
     - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.20641977
       objectReference: {fileID: 0}
     - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.9245283
       objectReference: {fileID: 0}
     - target: {fileID: 3920092181842668332, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -82022,6 +82034,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1117531996}
+    - target: {fileID: 3920092181959364024, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Name
+      value: Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092181959364026, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Text
+      value: Watch out Below
+      objectReference: {fileID: 0}
     - target: {fileID: 3920092182315881267, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_Name
       value: UI

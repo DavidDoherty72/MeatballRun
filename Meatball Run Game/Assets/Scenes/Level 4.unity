@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 054d76cd29de6f048883bfbbe0b5d2f9, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 99c265af2c9b57340930933cdaa63e60, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1263,7 +1263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &384488186
 Transform:
   m_ObjectHideFlags: 0
@@ -3502,7 +3502,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027186203}
-  m_LocalRotation: {x: 0.22975291, y: -0.000000016746089, z: 0.0000000039532155, w: 0.973249}
+  m_LocalRotation: {x: 0.22975291, y: 0.000000016746096, z: -0.0000000039532173, w: 0.973249}
   m_LocalPosition: {x: -110, y: 43.8, z: -276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7702,7 +7702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2121112098
 Transform:
   m_ObjectHideFlags: 0
@@ -7778,31 +7778,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -84.537636
+      value: -72.537636
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 79.05246
+      value: 49.05246
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -145.0846
+      value: -410.0846
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9848078
+      value: 0.973249
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.17364816
+      value: 0.22975291
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.000000016746096
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0000000039532173
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7951,9 +7951,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1358585454}
     m_Modifications:
+    - target: {fileID: 3920092180277274704, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Text
+      value: A THREAT LOOMS
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092180277274704, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 88
+      objectReference: {fileID: 0}
     - target: {fileID: 3920092181825964280, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Color.b
+      value: 0.11160547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Color.g
+      value: 0.11160547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920092181825964283, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9339623
       objectReference: {fileID: 0}
     - target: {fileID: 3920092181842668333, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_IsActive
@@ -7975,6 +7995,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1117531996}
+    - target: {fileID: 3920092181959364026, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+      propertyPath: m_Text
+      value: Do what you must
+      objectReference: {fileID: 0}
     - target: {fileID: 3920092182315881267, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
       propertyPath: m_Name
       value: UI
