@@ -8,11 +8,10 @@ using System;
 
 public class Player : MonoBehaviour
 {
-    public Image playerCurrentSkin;
+    
     public GameObject MygameObject;
-  //  public ExperienceCoins XP;
+    public Text levelText;
     public Text experienceText;
-    public Text experienceText2;
   
 
 
@@ -37,8 +36,8 @@ public class Player : MonoBehaviour
 
         //THIS IS WHERE LEVEL AND EXPERIENCE ARE ADDED TO UI
         Debug.Log("Level : " + progressionComponent.Level + " | Experience : " + progressionComponent.Experience);
-        experienceText.text = ("Level : " + progressionComponent.Level);
-        experienceText2.text = ("Experience : " + progressionComponent.Experience + "/Amount For Next Level");
+        levelText.text = ("Level : " + progressionComponent.Level);
+        experienceText.text = ("Experience : " + progressionComponent.Experience + "/Amount For Next Level");
     }
 
     

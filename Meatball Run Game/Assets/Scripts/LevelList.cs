@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 public class LevelList : MonoBehaviour
 {
+    void Start()
+    {
+        SoundSceneChange.Instance.gameObject.GetComponent<AudioSource>().UnPause();
+    }
+
+
     public void Level1()
     {
         Time.timeScale = 1f;
@@ -56,6 +62,17 @@ public class LevelList : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Credits");
     }
+    public void Controls()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Controls");
+    }
 
-    
+    public void PlayerProfile()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("PlayerProfile");
+    }
+
+
 }

@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class CollectingCoins : MonoBehaviour
 {
     public int coins;
-    public int coins2;
-    public int coins5;
-    public int coins10;
     public Text coinText;
    
 

@@ -23,8 +23,11 @@ public class PlayerMovement : MonoBehaviour
     private bool onGround = false;
     private int MAX_JUMP = 2;
     private int currentJump = 0;
-            
-        
+
+
+
+    
+
     public void Start() 
     {
        rb = GetComponent<Rigidbody>();
@@ -56,14 +59,19 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(0, 0, -forwardForce * 4 * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown("w")) //FORWARDS
+        if (Input.GetKey("w")) //FORWARDS
         {
-            rb.AddForce(0, 0, forwardForce * 2 * Time.deltaTime);
+            rb.AddForce(0, 0, forwardForce * Time.deltaTime);
         }
 
         if (Input.GetKeyDown("i")) //DASH
         {
             rb.AddForce(0, 0, dash * 2 * Time.deltaTime);
+            
+            GetComponent<ParticleSystem>().Play();
+            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+            em.enabled = true;
+           
         }
 
         if (Input.GetKeyDown("space") && (onGround || MAX_JUMP > currentJump)) //Jump & JumpCap
@@ -91,6 +99,15 @@ public class PlayerMovement : MonoBehaviour
         //speed flash 
     }
             
+
+    public IEnumerator DashWait()
+    {
+        if (Input.GetKeyDown("i"))
+        {
+            yield return new WaitForSeconds(3f);
+        }
+            
+    }
 }
 
 

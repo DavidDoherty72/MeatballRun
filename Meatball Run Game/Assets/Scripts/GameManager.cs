@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public AdManager ads;
+  
     bool gameHasEnded = false;
     public float restartDelay = 1f;
     public GameObject completeLevelUI;
@@ -22,16 +22,7 @@ public class GameManager : MonoBehaviour
     }
     
     
-    public void StartGame()
-    {
-        ads.ShowBanner();
-        
-    }
 
-   // public void RewardedLife()
-  // {
-    //   ads.PlayRewardedAd(onRewardedAdSuccess);
-   // }
 
 
     public void EndGame ()
@@ -43,7 +34,7 @@ public class GameManager : MonoBehaviour
             youDied();
             Invoke("Restart", restartDelay);
             //Restart Game
-            ads.PlayAd();
+         
         }
     
     }
