@@ -8,7 +8,7 @@ public class LevelList : MonoBehaviour
 {
     void Start()
     {
-        SoundSceneChange.Instance.gameObject.GetComponent<AudioSource>().UnPause();
+        //SoundSceneChange.Instance.gameObject.GetComponent<AudioSource>().UnPause();
     }
 
 

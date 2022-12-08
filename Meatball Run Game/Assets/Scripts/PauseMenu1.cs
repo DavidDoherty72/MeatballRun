@@ -40,7 +40,8 @@ public class PauseMenu1 : MonoBehaviour
     {
         Time.timeScale = 1f; 
         SceneManager.LoadScene("LevelList");
-        
+        SoundSceneChange.Instance.gameObject.GetComponent<AudioSource>().UnPause();
+
     }
     public void QuitGame()
     {

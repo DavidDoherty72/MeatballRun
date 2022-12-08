@@ -68,9 +68,9 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(0, 0, dash * 2 * Time.deltaTime);
             
-            GetComponent<ParticleSystem>().Play();
-            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
-            em.enabled = true;
+           // GetComponent<ParticleSystem>().Play();
+           // ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+           // em.enabled = true;
            
         }
 
