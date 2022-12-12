@@ -160,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.MeatballRunGame
-    Standalone: com.DefaultCompany.Meatball-Run-Game
+    Standalone: com.Adavi.Meatball-Adventure
     iPhone: com.DefaultCompany.Meatball-Run-Game
   buildNumber:
     Standalone: 0
@@ -909,7 +909,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   cloudProjectId: b752912e-3eb3-4486-b692-5c0d7d8b68eb
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
