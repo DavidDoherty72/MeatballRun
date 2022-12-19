@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,9 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private float forwardForce = 500f; //consant forward force 
     [SerializeField]
     private float sidewaysForce = 500f; //sideways force 
-    [SerializeField]
-    private float dash = 500f;
-    //public float MAX_SPEED = 2000f;
+    private float dash = 1000f;
+    
 
     //Jumping
     private float jumpSpeed = 5;
@@ -24,19 +24,27 @@ public class PlayerMovement : MonoBehaviour
     private int MAX_JUMP = 2;
     private int currentJump = 0;
 
+    //Dashing
+    private int MAX_DASH = 1;
+    private int currentDash = 0;
+    public Slider slider;
+    public Image fill;
 
 
-    
+
 
     public void Start() 
     {
        rb = GetComponent<Rigidbody>();
+       
     } 
      
     void OnCollisionEnter(Collision collision)
     {
         onGround = true;
+        fill.gameObject.SetActive(true);
         currentJump = 0;
+        currentDash = 0;
     }
 
     public void FixedUpdate ()
@@ -56,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("s")) //BACKWARDS
         {
-            rb.AddForce(0, 0, -forwardForce * 4 * Time.deltaTime);
+            rb.AddForce(0, 0, -forwardForce * 3 * Time.deltaTime);
         }
 
         if (Input.GetKey("w")) //FORWARDS
@@ -64,13 +72,12 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(0, 0, forwardForce * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown("i")) //DASH
+        if (Input.GetKeyDown("i") && (onGround || MAX_DASH > currentDash)) //DASH & DashCap
         {
             rb.AddForce(0, 0, dash * 2 * Time.deltaTime);
-            
-           // GetComponent<ParticleSystem>().Play();
-           // ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
-           // em.enabled = true;
+            onGround = false;
+            currentDash++;
+            fill.gameObject.SetActive(false);
            
         }
 

@@ -2148,7 +2148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '>Epilogue<'
+  m_Text: Epilogue
 --- !u!222 &892341140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5420,8 +5420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 199.1, y: 78.513}
-  m_SizeDelta: {x: 46, y: -47}
+  m_AnchoredPosition: {x: 210.03694, y: 77.02601}
+  m_SizeDelta: {x: 67.8739, y: -44.026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007783164
 MonoBehaviour:
@@ -5492,7 +5492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.90588236, g: 0.29803923, b: 0.23529412, a: 1}
+  m_Color: {r: 0.7607844, g: 0.2509804, b: 0.19607845, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

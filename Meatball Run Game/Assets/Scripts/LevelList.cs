@@ -37,11 +37,6 @@ public class LevelList : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Level 5");
     }
-    public void Level6()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Level 6");
-    }
     public void Endless()
     {
         Time.timeScale = 1f;

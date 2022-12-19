@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class ExperienceCoins : MonoBehaviour
 {
     public int xP;
-   // public Text experienceText;
+    // public Text experienceText;
+
+    
 
     public void OnTriggerEnter(Collider Col)
     {
-        if (Col.gameObject.tag == "XP")
+        if (Col.gameObject.tag == "Enemy")
         {
             xP = xP + 25;
             Destroy(Col.gameObject);

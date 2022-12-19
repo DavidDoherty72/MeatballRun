@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 public class Credits : MonoBehaviour
 {
 
+    void Start()
+    {
+        SoundSceneChange.Instance.gameObject.GetComponent<AudioSource>().UnPause();
+    }
     public void Quit()
     {
         Application.Quit();
