@@ -56,9 +56,10 @@ public class RatHealth : MonoBehaviour
     {
         if (curHealth <= 0)
         {
+            xP.GiveExperience(1);
             Rat.GetComponent<Animator>().Play("Death");
             Destroy(gameObject, 2f);
-            Experience = Experience + 25;
+            
         }
 
         

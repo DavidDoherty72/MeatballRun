@@ -16,6 +16,9 @@ public class Shooting : MonoBehaviour
     [SerializeField]
     private AudioClip grenadeSound; //AUDIO SOURCE
 
+    //Ammo Capacity
+
+
    
 
     //Abilities
