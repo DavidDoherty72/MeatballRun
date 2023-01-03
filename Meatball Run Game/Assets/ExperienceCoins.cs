@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ExperienceCoins : MonoBehaviour
 {
-    public int xP;
+    public int Experience;
     // public Text experienceText;
 
     
@@ -14,7 +14,7 @@ public class ExperienceCoins : MonoBehaviour
     {
         if (Col.gameObject.tag == "Enemy")
         {
-            xP = xP + 25;
+            Experience = Experience + 25;
             Destroy(Col.gameObject);
             //Col.gameObject.SetActive(false);
         }

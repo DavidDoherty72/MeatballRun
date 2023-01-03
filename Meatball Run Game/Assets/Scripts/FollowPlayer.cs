@@ -24,7 +24,7 @@ public class FollowPlayer : MonoBehaviour
         if (Input.GetKeyDown("i"))
         {
 
-            Debug.Log("Dashed");
+           // Debug.Log("Dashed");
 
         }
     }

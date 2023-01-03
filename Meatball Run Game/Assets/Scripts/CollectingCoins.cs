@@ -11,7 +11,7 @@ public class CollectingCoins : MonoBehaviour
 
     // Start is called before the first frame update
    
-
+    //Coins Attached to GameObject
     public void OnTriggerEnter(Collider Col)
     {
         if (Col.gameObject.tag == "Coins")

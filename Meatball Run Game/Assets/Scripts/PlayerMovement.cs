@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private float forwardForce = 500f; //consant forward force 
     [SerializeField]
     private float sidewaysForce = 500f; //sideways force 
-    private float dash = 1000f;
+    private float dash = 1500f;
+
+    
     
 
     //Jumping
@@ -74,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown("i") && (onGround || MAX_DASH > currentDash)) //DASH & DashCap
         {
-            rb.AddForce(0, 0, dash * 2 * Time.deltaTime);
+            rb.AddForce(0, 0, dash * 3 * Time.deltaTime);
             onGround = false;
             currentDash++;
             fill.gameObject.SetActive(false);

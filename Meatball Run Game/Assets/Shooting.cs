@@ -34,7 +34,7 @@ public class Shooting : MonoBehaviour
         GameObject clone = Instantiate(grenade, transform.position + offset, Quaternion.identity);
         SpawnGrenadeEffects();
 
-        Destroy(clone, 1.0f);
+        Destroy(clone, .5f);
     }
 
     void SpawnGrenadeEffects()
