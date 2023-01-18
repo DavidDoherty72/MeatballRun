@@ -7,4 +7,16 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    public void PlayerProfile()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("PlayerProfile");
+    }
+
+    public void Achievements()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Achievements");
+    }
 }

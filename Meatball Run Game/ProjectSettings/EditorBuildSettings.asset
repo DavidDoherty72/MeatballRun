@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/PlayerProfile.unity
     guid: 089945c6d4c47c04ca557736e35b3fea
   - enabled: 1
+    path: Assets/Achievements.unity
+    guid: 343ccb91668498542b288e1ae555d1a5
+  - enabled: 1
     path: Assets/Scenes/Store.unity
     guid: aa7f919aa47ba044a91f5bb4c1d491f3
   - enabled: 1

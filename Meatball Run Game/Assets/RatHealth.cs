@@ -5,11 +5,13 @@ using UnityEngine;
 public class RatHealth : MonoBehaviour
 {
     //Reference to Player for Experience gain
-    public ExperienceCoins xP;
+    //public ExperienceCoins xP;
+    public Player player;
 
-    //Animation
+    //Animation reference
     public GameObject Rat;
-    public Animation deathAnimation;
+
+    
     //Health
     public int maxHealth = 100;
     public int curHealth = 100;
@@ -40,7 +42,7 @@ public class RatHealth : MonoBehaviour
 
         if (curHealth < 0)
             curHealth = 0;
-            
+             DeathEffects();
 
         if (curHealth > maxHealth)
             curHealth = maxHealth;
@@ -49,14 +51,16 @@ public class RatHealth : MonoBehaviour
             maxHealth = 1;
 
         healthBar.SetHealth(curHealth);
-        DeathEffects();
+       
     }
-    
-    public void DeathEffects() //Plays Death animation and then destroys enemy
+
+    //Plays Death animation and then destroys enemy
+    public void DeathEffects() 
     {
         if (curHealth <= 0)
         {
-            xP.GiveExperience(1);
+            //xP.GiveExperience();
+            player.IncrementXp(1);
             Rat.GetComponent<Animator>().Play("Death");
             Destroy(gameObject, 2f);
             

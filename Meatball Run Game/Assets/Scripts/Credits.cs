@@ -28,5 +28,7 @@ public class Credits : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("LevelList");
     }
+
+   
 }
 

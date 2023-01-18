@@ -10,9 +10,9 @@ public class ExperienceCoins : MonoBehaviour
 
 
 
-    public void GiveExperience(int val)
+    public void GiveExperience()
     {
-     Experience = Experience + 1;
+     Experience = Experience + 25;
 
     }
 

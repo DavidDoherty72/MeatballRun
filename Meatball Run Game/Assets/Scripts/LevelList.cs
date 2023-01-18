@@ -74,4 +74,15 @@ public class LevelList : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Epilogue");
     }
+
+    public void Achievements()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Achievements");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
