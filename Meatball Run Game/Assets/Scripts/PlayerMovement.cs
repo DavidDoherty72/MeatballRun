@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private int currentDash = 0;
     public Slider slider;
     public Image fill;
-
+    public AudioClip dashSound;
 
 
 
@@ -80,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             onGround = false;
             currentDash++;
             fill.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(dashSound, transform.position);
            
         }
 

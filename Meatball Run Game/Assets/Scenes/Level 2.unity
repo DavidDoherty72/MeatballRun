@@ -23969,6 +23969,10 @@ MonoBehaviour:
   offset: {x: 0, y: 0.5, z: 30}
   grenadeEffect: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
   grenadeSound: {fileID: 8300000, guid: 047ae7504051ca3448a7ad48534d7217, type: 3}
+  bullets: 0
+  maxBullets: 5
+  minBullets: 0
+  bulletsText: {fileID: 675488733}
 --- !u!114 &618005821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31578,6 +31582,17 @@ PrefabInstance:
     - {fileID: 5823164268620141776, guid: 7218b9728928b894eb1799b26af67733, type: 3}
     - {fileID: 5024840511134409180, guid: 7218b9728928b894eb1799b26af67733, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7218b9728928b894eb1799b26af67733, type: 3}
+--- !u!114 &675488733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 339023285, guid: 7295a36af20978043bad1431639c9f1f, type: 3}
+  m_PrefabInstance: {fileID: 3920092181520423857}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &678050944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87835,7 +87850,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097086342}
-  m_LocalRotation: {x: 0.04604102, y: 0.023764148, z: -0.0010956007, w: 0.9986563}
+  m_LocalRotation: {x: 0.04604101, y: 0.023764111, z: -0.0010955973, w: 0.9986563}
   m_LocalPosition: {x: -321.19373, y: -18.353539, z: -36.068542}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -87869,11 +87884,15 @@ PlayableDirector:
     value: {fileID: 8201388646112635068}
   - key: {fileID: 5271655711135931549, guid: 9ec263e45e861ef4d8a1d40881ba675b, type: 2}
     value: {fileID: 8201388646112635068}
+  - key: {fileID: 5063257094505728006, guid: 9ec263e45e861ef4d8a1d40881ba675b, type: 2}
+    value: {fileID: 1970941787}
   m_ExposedReferences:
     m_References:
+    - 84deb0af47b4318438e52c3340ea3ae1: {fileID: 2097086346}
     - 514c578f005de1b4ea866c64314c1db7: {fileID: 2129919438}
     - 62a19f5f597708f439c10adadbe8685b: {fileID: 2129919438}
     - e234412c07e7feb4f8d2e4979234f2a1: {fileID: 2097086346}
+    - edd56cdf7161572479a78a4599ed8db0: {fileID: 2129919438}
 --- !u!114 &2097086345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89988,7 +90007,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129919437}
-  m_LocalRotation: {x: 0.22205904, y: -0.13228226, z: 0.030422868, w: 0.96553904}
+  m_LocalRotation: {x: 0.22205903, y: -0.13228224, z: 0.030422866, w: 0.96553904}
   m_LocalPosition: {x: -323.9, y: 14.6, z: 3395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -90511,15 +90530,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.22205904
+      value: 0.22205903
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.13228226
+      value: -0.13228224
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.030422868
+      value: 0.030422866
       objectReference: {fileID: 0}
     - target: {fileID: 638977524983205483, guid: 9d104790bc7682145a42e8809e86b53d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -91022,8 +91041,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6596050763787547758, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
       propertyPath: sounds.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6596050763787547758, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+      propertyPath: sounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
     - target: {fileID: 8201388645080041443, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
       propertyPath: m_CollisionDetection
       value: 2
@@ -91044,6 +91067,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 513412624}
+    - target: {fileID: 8201388645080041446, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
+      propertyPath: dashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 35fbad8cdde724f11ba6481f1e64af71, type: 3}
     - target: {fileID: 8201388645080041446, guid: 4f48556f1f1bac54c97c0633a5340eb9, type: 3}
       propertyPath: forwardForce
       value: 300

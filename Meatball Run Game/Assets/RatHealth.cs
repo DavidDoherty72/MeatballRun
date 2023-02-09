@@ -42,7 +42,8 @@ public class RatHealth : MonoBehaviour
 
         if (curHealth < 0)
             curHealth = 0;
-             DeathEffects();
+            DeathEffects();
+        
 
         if (curHealth > maxHealth)
             curHealth = maxHealth;
@@ -61,9 +62,9 @@ public class RatHealth : MonoBehaviour
         {
             //xP.GiveExperience();
             player.IncrementXp(1);
-            Rat.GetComponent<Animator>().Play("Death");
+             Rat.GetComponent<Animator>().Play("Death");
             Destroy(gameObject, 2f);
-            
+
         }
 
         
